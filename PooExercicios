@@ -1,0 +1,232 @@
+Package POO;
+
+public class Cliente {
+
+// Exercicio 1 – JAVA8 – POO: Classes e Objetos
+
+    private String tipo;
+    private String nome;
+    private String ID;
+    private String cidade;
+    private String endereco;
+
+    public Cliente(String tipo, String nome, String ID, String cidade, String endereco) {
+        this.tipo = tipo;
+        this.nome = nome;
+        this.ID = ID;
+        this.cidade = cidade;
+        this.endereco = endereco;
+    }
+
+    public String getTipo() {
+        return tipo;
+        }
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getID() {
+        return ID;
+    }
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public void visualizar() {
+        System.out.println("Tipo: " + tipo);
+        System.out.println("Nome " + nome);
+        System.out.println("ID " + ID);
+        System.out.println("Cidade " + cidade);
+        System.out.println("Endereço: " + endereco);
+    }
+}
+
+
+Package POO;
+
+public class ClienteTest {
+    public static void main(String[] args) {
+
+            Cliente cliente1 = new Cliente("PF", "ZÉ", "123.456.789", "SP", "Rua da Graca, 157");
+            Cliente cliente2 = new Cliente("PJ", "TABAJARA", "321.321.321-82", "RJ", "Rua, Hum");
+
+            cliente1.visualizar();
+            cliente2.visualizar();
+        }
+    }
+    
+    
+package POO;
+
+public class Funcionario {
+
+// Exercicio 2 – JAVA8 – POO: Classes e Objetos
+
+    private String sexo;
+    private String nome;
+    private String ID;
+    private String departamento;
+    private String funcao;
+
+    public Funcionario(String sexo, String nome, String ID, String departamento, String funcao) {
+        this.sexo = sexo;
+        this.nome = nome;
+        this.ID = ID;
+        this.departamento = departamento;
+        this.funcao = funcao;
+    }
+
+    public String getSexo() {
+        return sexo;
+        }
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getID() {
+        return ID;
+    }
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public String getDepartamento() {
+        return departamento;
+    }
+    public void setDepartamento(String cidade) {
+        this.departamento = cidade;
+    }
+
+    public String getFuncao() {
+        return funcao;
+    }
+    public void setFuncao(String endereco) {
+        this.funcao = endereco;
+    }
+
+    public void visualizar() {
+        System.out.println("Sexo: " + sexo);
+        System.out.println("Nome " + nome);
+        System.out.println("ID " + ID);
+        System.out.println("Departamento " + departamento);
+        System.out.println("Endereço: " + funcao);
+    }
+}
+
+package POO;
+
+public class FuncionarioTest {
+    public static void main(String[] args) {
+
+            Funcionario funcionario1 = new Funcionario("M", "ZÉ", "123.456.789-03", "RH", "Dev");
+            Funcionario funcionario2 = new Funcionario("F", "Maria", "321.321.321-81", "TI", "Dev");
+
+            funcionario1.visualizar();
+            funcionario2.visualizar();
+        }
+    }
+    
+    
+package POO;
+
+public class Produto {
+
+// Exercicio 3 – JAVA8 – POO: Classes e Objetos
+
+    private String nome;
+    private String id;
+    private String categoria;
+    private String cfop;
+    private String estoque;
+
+    public Produto(String nome, String id, String categoria, String cfop, String estoque) {
+        this.nome = nome;
+        this.id = id;
+        this.categoria = categoria;
+        this.cfop = cfop;
+        this.estoque = estoque;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getId() {
+        return id;
+    }
+    public void setId(String Id) { this.id = id; }
+
+    public String getCategoria() {
+        return categoria;
+    }
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public String getcfop() {
+        return cfop;
+    }
+    public void setCfop(String cfop) {
+        this.cfop = cfop;
+    }
+
+    public String getEstoque() {
+        return estoque;
+    }
+    public void setEstoque(String estoque) {
+        this.estoque = estoque;
+    }
+
+    public void visualizar() {
+        System.out.println("Nome: " + nome);
+        System.out.println("ID: " + id);
+        System.out.println("Categoria: " + categoria);
+        System.out.println("cfop: " + cfop);
+        System.out.println("Estoque: " + estoque);
+    }
+
+}
+
+package POO;
+
+public class ProdutoTest {
+        public static void main(String[] args) {
+            Produto produto1 = new Produto("Corolla", "1.8", "gli", "2023", "1");
+            Produto produto2 = new Produto("Corolla", "2.0", "exi", "2023", "2");
+
+            produto1.visualizar();
+            produto2.visualizar();
+
+        }
+    }
